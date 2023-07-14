@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <title>BMI Calculator</title>
+
+        <!--Script & Font links-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&family=Prompt:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Title & subtitles-->
+        <h1>Body Mass Index Calculator</h1>
+        <h3>Compatible with metric and imperial measurements</h3>
+        <h4>Select the preferred measurement system</h4>
+
+        <!--Buttons-->
+        <button type="button" id="metricSel">Metric</button>
+        <button type="button" id="impSel">Imperial</button>
+        <br><br>
+
+        <!--Main form-->
+        <form>
+        <label for="iptH" id="prompt1"></label>
+        <input type="text" id="iptH" name="iptH" style="visibility:hidden"><br>
+        <br>
+        <label for="iptW" id="prompt2"></label>
+        <input type="text" id="iptW" name="iptW" style="visibility:hidden"><br><br>
+        <input type="button" id="subBut" name ="subBut" value="Submit" style="visibility: hidden">
+        </form>
+
+        <br>
+        <!--Main BMI Table-->
+        <table id="tbl">
+            <tr>
+                <th>BMI Score</th>
+                <th>Classification</th>
+            </tr>
+            <tr>
+                <td>&#60;18.50</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.50-24.99</td>
+                <td>Healthy weight</td>
+            </tr>
+            <tr>
+                <td>25.00-29.99</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>&#62;30.00</td>
+                <td>Obese</td>
+            </tr>
+        </table>
+        <!--Classification declarer-->
+        <h3 id="resMes"></h3>
+        <!--Link to javascript-->
+        <script src="calculate.js"></script>
+    </body>
+</html>

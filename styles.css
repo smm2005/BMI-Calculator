@@ -1,0 +1,42 @@
+body{
+    background-image: url("images/8738897.jpg");
+    background-size: 1440px;
+    object-fit: cover;
+    color: whitesmoke;
+    font-family: 'Prompt', sans-serif;
+    align-items: center;
+}
+
+#metricSel, #impSel, #subBut{
+    color: whitesmoke;
+    background: none;
+    border-color: whitesmoke;
+    border-radius: 15%;
+    font-family: 'Prompt', sans-serif;
+}
+
+#metricSel:hover, #impSel:hover, #subBut:hover{
+    background: navy;
+}
+
+#iptH{
+    visibility: hidden;
+}
+
+#iptW{
+    visibility: hidden;
+}
+
+#subBut{
+    visibility: hidden;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-color: whitesmoke;
+    border-collapse: collapse;
+}
+
+#tbl{
+    visibility: hidden;
+}
